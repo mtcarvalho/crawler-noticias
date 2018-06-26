@@ -23,6 +23,9 @@ cnx = mysql.connector.connect(
         port='3306',
         db='news')
 ```
+- Caso queira buscar notícias em outra linguagem, altere (baseado na documentação do newspaper3k) ou retire as ocorrências do valor abaixo:
+`language='pt'`
+
 - Execute o crawler
 `python crawler.py`
 
