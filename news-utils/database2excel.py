@@ -5,6 +5,7 @@ import datetime
 import mysql.connector
 from openpyxl import Workbook
 
+#TODO pass values in variables
 cnx = mysql.connector.connect(
         user='root',
         password='root',
@@ -14,6 +15,7 @@ cnx = mysql.connector.connect(
         
 cursor = cnx.cursor()
 
+#TODO use pony
 query = ("select article_id, title, meta_description," + 
         "summary, text, url_news, url_source_news from article;")
 
